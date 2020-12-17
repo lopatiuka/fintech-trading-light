@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>FinTech Trading</title>
+        <link rel = "stylesheet" href = "css/style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+         <!-- BEGIN intgrtn -->
+         <script type="text/javascript">
+            (function (d) {
+                if (window.intgrtn) {
+                    return;
+                }
+                var s = d.createElement("script");
+                var date = new Date();
+                s.src = "//mistertrack.click/api/v1/integration/sdk.js?v=" + date.getFullYear().toString() + date.getMonth().toString() + date.getDay().toString() + date.getHours().toString();
+                d.getElementsByTagName("head")[0].appendChild(s);
+            }(document));
+        </script>
+        <!-- END intgrtn -->
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class = "container">
+                    <div class = "main-content">
+                        <img src = "images/logo dark.png">
+                        <div class = "exposure">
+                            <p class = "caption">Exclusive Exposure for</p>
+                            <div class = "country">
+                                <img id = "flag"><p id = "location"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class = "main">
+                <section id = "home" class = "intro">
+                    <div class = "container">
+                        <div class = "content">  
+                            <div class = "video-container">
+                                <div class = "video-header" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+                                    <h1>This is The Payments (R)evolution!</h1>
+                                </div>  
+                                <p class="video-caption" data-aos="fade-down" data-aos-duration="1000">
+                                    <span class = "bigger-text">Visa, mastercard, Goldman Sachs, Wells Fargo; these are but a few 
+                                        familiar names in banking.</span><br>
+                                    <br>
+                                    Sure, you’ve heard of the likes of PayPal and Transferwise and all the innovations they have done 
+                                    for the payments industry. Rest assured though, there’s bigger players out there! The Financial 
+                                    Technology (FinTech) sector is one a very swift rise.
+                                    Newcomers like Square, Stripe, Alphabet, ApplePay, AmazonPay are all but a few of these FinTech 
+                                    companies that are coming into play. They provide payment solutions like never before. Every time 
+                                    you swipe your card somewhere, make an online payment or just transfer money, one or more of these 
+                                    companies is involved in the process.
+                                </p>
+                                <div class = "video" data-aos="fade-right" data-aos-duration="1500">
+                                    <iframe id = "iframe-video" width="100%" height="100%" src="https://www.youtube.com/embed/VFxKo73UQzM"
+                                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            <div id = "form2" class = "form-container hidden-form2" data-aos="fade-left" data-aos-duration="1500">
+                                <h3>STEP 2</h3>
+                                <h2 class = "form-header">Open an account with Exness & setup your watchlist!</h2>
+                                <img class = "image-step2" src = "images/exness-logo.png">
+                                <form>
+                                    <input type = "submit" value = "Open Account"/>
+                                </form>
+                            </div> 
+                            <div id = "form" class = "form-container" data-aos="fade-left" data-aos-duration="1500">
+                                <img src = "images/logo dark.png">
+                                <h2 class = "form-header">Join the Millions!</h2>
+                                <form>
+                                    <input type = "text" placeholder="First Name"/>
+                                    <input type = "text" placeholder="Last Name"/>
+                                    <input type = "email" placeholder="Email address"/>
+                                    <div class = "checkboxes">
+                                        <div class = "custom-checkbox">
+                                            <label class = "switch">
+                                                <input type = "checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <p>
+                                                By checking this box you agree to subscribe to Traders
+                                                Expert & it’s affiliates brand assets newsletter 
+                                            </p>
+                                        </div>
+                                        <div class = "custom-checkbox">
+                                            <label class = "switch">
+                                                <input type = "checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <p>
+                                                By checking this box you agree to our  <a href="https://traders.expert/terms-conditions/" target="_blank">Terms</a>,
+                                                <a href="https://traders.expert/privacy-policy/" target="_blank">Privacy</a> &amp; 
+                                                <a href="https://traders.expert/spam-disclaimer/" target="_blank">Spam Disclaimer</a>
+                                            </p>
+                                        </div>
+                                        <div class = "custom-checkbox">
+                                            <label class = "switch">
+                                                <input type = "checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <p>
+                                                By checking this box you agree to our <a href = "https://traders.expert/privacy-policy/" target="_blank">GDPR</a> terms
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <button id = "submit-button"><span>Register</span></button>
+                                </form>
+                            </div>   
+                        </div>                                                                          
+                    </div>
+                        <div class="ribbon">
+                            <img src = "images/Apple_Pay_logo 1.png">
+                            <img src = "images/amazonpay-logo.png">
+                            <img src = "images/facebook pay logo.png">
+                            <img src = "images/Google_Pay_(GPay)_Logo 1.png">
+                            <img src = "images/Goldman_Sachs logo.png">
+                        </div>
+                </section>
+                <section id = "about" class = "about">
+                    <div class = "container">
+                        <div class = "about-intro">
+                            <div class = "header-container">
+                                <h2>Banks are so 90s! Say hello to FinTech.</h2>
+                                <p class = "subheader">So what makes FinTech companies different from traditional banks? Simple, they 
+                                    are built from the ground up with one and only goal. Make the movement of money from point A to 
+                                    point B faster, hassle free and readily available - at your fingertips! </p>
+                            </div>
+                            <div class = "content">
+                                <div class = "text">
+                                    <p>In the process, they innovate and provide new services that relate to money. With many of these 
+                                        solutions you can now save, pay, invest, fund and do pretty much everything that would normally 
+                                        require a bank.<br>
+                                        <br>
+                                        No wonder technology giants like Google, Apple, Facebook, Amazon and traditional banking giants 
+                                        like Goldman Sachs are all moving into the FinTech dancefloor.
+                                        <br>
+                                        In the meantime, these companies offer ground-breaking solutions that traditional banks simply 
+                                        cannot seem to keep pace with. For example, you can have accounts in multiple currencies, 
+                                        electronic IBANs, some of them even cater for transactions in cryptocurrencies such as Bitcoin 
+                                        and Ethereum. 
+                                    </p>
+                                    <p>
+                                        The most important point of all is that any company dealing with money, is fully regulated and 
+                                        licensed to operate as a payment institution. So rest assured, your money is safe.<br>
+                                        <br>
+                                        So is this the end of banks? Well, yes and no. You see, many traditional banks are now evolving 
+                                        to meet the payment market needs for faster, simpler and flexible payment solutions. In the 
+                                        process, traditional banking powerhouses are buying out major FinTech providers to keep pace. 
+                                        As such, the value of FinTech companies is constantly on the rise. How much value you may ask? 
+                                        Well, the global FinTech sector is forecasted to be worth $305 Billion by 2025, a forecasted 
+                                        growth rate of 22% in 5 years! 
+                                    </p>
+                                </div>
+                                <p class = "about-conclusion">
+                                    Not too shabby now, is it? 
+                                </p>
+                            </div>
+                        </div>
+                        <div class = "about-items">
+                            <hr noshade class = "about-line">
+                            <div class = "inner-items">
+                                <div class = "item" data-aos="zoom-in" data-aos-duration="1000">
+                                    <h2 class = "step"><span>Step #1</span></h2>
+                                    <div class = "inner-item">
+                                        <h3 class = "item-header">Choose a stock you know</h3>
+                                        <p class = "item-content">
+                                            Stocks like ApplePay, GooglePay, AmazonPay, PayPal and similar ones. Why? Cause they’re 
+                                            familiar. You know them, you use them every day. Everyone’s done a purchase from one of 
+                                            these providers at some point or another. Who do you think gets a “cut” when you buy 
+                                            something online or pay for your coffee? That’s right, these companies do! So in short, 
+                                            you know these companies; they are part of our daily lives.<br>
+                                            <br>
+                                            Plus, Information on these stocks is readily available and easy to understand. So place 
+                                            these stocks on your “watch list” and keep an eye on their growth.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class = "item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                                    <h2 class = "step"><span>Step #2</span></h2>
+                                    <div class = "inner-item">
+                                        <h3 class = "item-header">Find your broker</h3>
+                                        <p class = "item-content">
+                                            Finding a licensed financial institution to help you grow your money is super easy. 
+                                            Today there are as many brokers as there are McDonald’s stores! Reputable brokers can help 
+                                            guide you every step of the way. Additionally, investment software is now easy to learn 
+                                            and use and available on any device; PC, Pad and Mobile, so you can pretty much invest 
+                                            while on the go.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class = "item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                                    <h2 class = "step"><span>Step #3</span></h2>
+                                    <div class = "inner-item">
+                                        <h3 class = "item-header">Your Capital, Your Risk</h3>
+                                        <p class = "item-content">
+                                            Always remember to invest your money wisely. What does this mean? DON’T SPEND ALL YOUR MONEY!
+                                            Instead, invest a limited amount that you can afford and which correlates to the actual 
+                                            market rate.<br>
+                                            <br>
+                                            That is, if a PayPal share is currently valued at 200 USD per share, starting with 20 USD 
+                                            will not cut it.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class = "cta-button"><span>Register</span></a>
+                    </div>
+                </section>
+                <section class = "stock-leaders">
+                    <div class = "container">
+                        <div class = "stock-leaders-top">
+                            <div class = "stock-leaders-top-container">
+                                <div class = "stock-leaders-header">
+                                    <h2>Meet the Stock Trading Leaders</h2>
+                                    <h3>Here are a few things about the companies</h3>
+                                </div>
+                                <div class = "stock-leaders-items">
+                                    <div class = "item" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                                        <div class = "image">
+                                            <img src = "images/amazonpay-logo-2.png">
+                                        </div>
+                                        <h3 class = "header">Amazon</h3>
+                                        <p class = "value">Net Worth: <span>280.5 Billion USD</span></p>
+                                        <div class = "details">
+                                            <p><span>Founded:</span> 1994</p>
+                                            <p><span>CEO & Founder:</span> Jeff Bezos</p>
+                                            <p><span>Symbol:</span> AMZN</p>
+                                            <p><span>Stock Market:</span> Nasdaq</p>
+                                            <p><span>Num Of Emp:</span> 1,000,000</p>
+                                        </div>
+                                    </div>
+                                    <div class = "item" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                                        <div class = "image">
+                                            <img src = "images/apple-pay-logo-2.png">
+                                        </div>
+                                        <h3 class = "header">Apple</h3>
+                                        <p class = "value">Net Worth: <span>2 Trillion USD</span></p>
+                                        <div class = "details">
+                                            <p><span>Founded:</span> 1976</p>
+                                            <p><span>CEO:</span> Tim Kook</p>
+                                            <p><span>Symbol:</span> AAPL</p>
+                                            <p><span>Stock Market:</span> Nasdaq</p>
+                                            <p><span>Num Of Emp:</span> 137,000</p>
+                                        </div>
+                                    </div>
+                                    <div class = "item" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                                        <div class = "image">
+                                            <img src = "images/facebook-pay-logo-2.png">
+                                        </div>
+                                        <h3 class = "header">Facebook</h3>
+                                        <p class = "value">Net Worth: <span>528 Billion USD</span></p>
+                                        <div class = "details">
+                                            <p><span>Founded:</span> 2004</p>
+                                            <p><span>CEO:</span> Mark Zuckerberg</p>
+                                            <p><span>Symbol:</span> FB</p>
+                                            <p><span>Stock Market:</span> Nasdaq</p>
+                                            <p><span>Num Of Emp:</span> 52,534</p>
+                                        </div>
+                                    </div>
+                                    <div class = "item" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                                        <div class = "image">
+                                            <img src = "images/google-pay-logo-2.png">
+                                        </div>
+                                        <h3 class = "header">Google</h3>
+                                        <p class = "value">Net Worth: <span>168 Billion USD</span></p>
+                                        <div class = "details">
+                                            <p><span>Founded:</span> 1998</p>
+                                            <p><span>CEO:</span> Sundar Pichai</p>
+                                            <p><span>Symbol:</span> GOOGL</p>
+                                            <p><span>Stock Market:</span> Nasdaq</p>
+                                            <p><span>Growth:</span> 27.5% in 2020</p>
+                                        </div>
+                                    </div>
+                                    <div class = "item" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                                        <div class = "image">
+                                            <img src = "images/paypal-logo-2.png">
+                                        </div>
+                                        <h3 class = "header">PayPal</h3>
+                                        <p class = "value">Net Worth: <span>128 Billion USD</span></p>
+                                        <div class = "details">
+                                            <p><span>Founded:</span> 1998</p>
+                                            <p><span>CEO:</span> Daniel Schulman</p>
+                                            <p><span>Symbol:</span> PYPL</p>
+                                            <p><span>Growth in 2020:</span> 102%</p>
+                                            <p><span>Revenue:</span> 247 Billion</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "stock-leaders-bottom">
+                            <div class = "bottom-container">
+                                <div class = "conclusion">
+                                    <span class = "blue-color">Let’s sum it up.</span></br>
+                                    <div class = "text-container">
+                                        <p class = "text">
+                                            If you yearn to amplify your income, then you are ready to take this step. To help you out, 
+                                            we’ve prepared a list of the most popular stocks for you. At the same time, we offer you the 
+                                            ability to kick off your journey by creating a new account with one of our reputable 
+                                            licensed institutions, simply by filling in the form above.
+                                        </p>
+                                        <p class = "text">
+                                            Setting up an account will give you access to an easy to use trading platform accessible 
+                                            from any device, where you can create your watch list. Moreover, you will receive access 
+                                            to free educational material and additional investment tools that can assist you in your 
+                                            financial journey.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class = "lets-go">
+                                    <h3>
+                                        You’re not alone. Our community of seasoned traders all started out just like you, from 
+                                        scratch! Subscribe to our community and find out how other people, just like you, have achieved 
+                                        success by investing in the financial markets.
+                                    </h3>
+                                    <h2 class = "blue-header" data-aos="fade-down" data-aos-duration="1000">Join the Millions!</h2>
+                                    <div class = "about-links" data-aos="flip-up" data-aos-duration="1000">
+                                        <a href = "#form" id = "register-link" class = "cta-button"><span>Register</span></a>
+                                        <a href = "#" class = "cta-button"><span>Follow Community</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id = "faq" class = "faq">
+                    <div class = "container">
+                        <h2 class = "faq-header">FAQs</h2>
+                        <h3 class = "faq-caption">Frequently Asked Questions</h3>
+                        <div class = "answers">
+                           <details data-aos="flip-up" data-aos-duration="1000">
+                               <summary> <div class = "round-button">+</div>How much can I earn from Stock Trading?</summary>
+                                    <p>This is a subjective question. Earning from stocks can relate to both your entry time and 
+                                        position. As an example, in 2020, Pfizer Stocks increased their value from $35 per share to 
+                                        over $40. That translates to a yearly growth of over 14% which was the potential profit one 
+                                        could have gained that year, and is well above any percentage any savings bank can offer.
+                                    </p>
+                           </details>
+                           <details data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
+                                <summary> <div class = "round-button">+</div>How long does it take to setup a trading account?</summary>
+                                <p>Opening an account, verifying it and purchasing your first assets, takes about 5 minutes. 
+                                    But having said that, there is always more than just making a registration, depositing funds and 
+                                    buying a stock. It is advisable that you also budget some time for learning the ins and outs of 
+                                    trading. Our expert trading community provides education that covers all levels of trading; from 
+                                    beginner to pro. Make sure you check some of our partners' educational programmes. They will help 
+                                    take you and your trades to the next level.
+                                </p>
+                            </details>
+                            <details data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200"> 
+                                <summary> <div class = "round-button">+</div>Can i have more than one trading account?</summary>
+                                <p>Yes it is possible to have multiple trading accounts. Always make sure you open an account with 
+                                    one of our reputable, licensed brokers.
+                                </p>
+                            </details>
+                            <details data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300"> 
+                                <summary> <div class = "round-button">+</div>What is the minimum amount required to open a trading account?</summary>
+                                <p>Once you have opened an account with one of our many regulated brokers, you will need to fund it 
+                                    in order to start trading. It's customary that traders start off with an investment ranging from 
+                                    $250-$1,000. the minimum amount depends on the broker and the assets you wish to trade.
+                                </p>
+                            </details>
+                            <details data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
+                                <summary> <div class = "round-button">+</div>What is the minimum amount i need to trade?</summary>
+                                <p>Once you have opened an account with one of our many regulated brokers, you will need to fund it in 
+                                    order to start trading. It's customary that traders start off with an investment ranging from 
+                                    $250-$1,000. the minimum amount depends on the broker and the assets you wish to trade.
+                                </p>
+                            </details>
+                            <details data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
+                                <summary> <div class = "round-button">+</div>Is my account protected?</summary>
+                                <p>We take data security and privacy very seriously. Both us and our recommended partners are in full 
+                                    compliance with KYC, AML, Privacy Policies, Terms of Use (EULA) and most importantly GDPR 
+                                    guidelines. So your information is safe as per the applicable laws and global data protection 
+                                    requirements.
+                                </p>
+                            </details>
+                        </div>
+                    </div> 
+                </section>
+            </main>
+            <footer class = "footer">
+                <div class = "container">
+                    <img src = "images/logo light.png">
+                    <div class = "links-list">
+                            <a href = "https://traders.expert/risk-warning/" target="_blank">Risk Disclaimer</a>
+                             <span>|</span>
+                            <a href = "https://traders.expert/privacy-policy/" target="_blank">Privacy Policy</a>
+                             <span>|</span>
+                            <a href = "https://traders.expert/contact-us/" target="_blank">Report Abuse</a>
+                             <span>|</span>
+                            <a href = "https://traders.expert/terms-conditions/" target="_blank">Terms</a>
+                             <span>|</span>
+                            <a href = "https://traders.expert/privacy-policy/" target="_blank">GDPR</a>
+                             <span>|</span>
+                            <a href = "https://traders.expert/contact-us/" target="_blank">Contact Us</a>
+                    </div>
+                    <p class = "rights">© 2020 All Rights Reserved - Stocks Man is an advertorial web page under Traders Expert, 
+                        which is a <a href = "https://mr.click/" target="_blank">
+                        Mr.Click</a> brand, operated by Blue Media LTD.
+                    </p>
+                    <div class = "risk-disclaimer">
+                        <h2>BROKER'S ORIGINAL RISK WARNING</h2>
+                        <p>CFDs are leveraged products that incur a high level of risk and can result in the loss of all your capital and 
+                            may therefore not be suitable for all investors. You should not risk more than you are prepared to lose. 
+                            Before deciding to trade, please ensure you understand the risks involved, take the level of your experience 
+                            into consideration and seek independent advice if necessary. We strictly do not provide investment advice. 
+                            To read our full risk disclosure statement, please click here. The Company does not offer its service to 
+                            residents of certain jurisdictions such as: Australia, New Zealand, Canada, Iran, North Korea and Belgium. 
+                            USA nationals are not accepted regardless of the country of residence. The information on this site is not 
+                            intended for distribution to, or use by any person in any country where such distribution or use would be 
+                            contrary to the local law or regulation, or to any person under the age of 18. It is the responsibility of 
+                            the visitors to this site to ascertain the terms of and comply with all local law or regulation.
+                        </p>
+                    </div>
+                    <hr noshade/>
+                    <div class = "legal-disclaimers">
+                        <h2>Legal Disclaimers</h2>
+                        <div class = "spoilers">
+                            <div class = "column-spoilers">
+                                <div class = "details">
+                                    <div class = "summary">
+                                        <p>Copyrights Disclaimer</p>
+                                        <i class = "arrow"></i>
+                                    </div>
+                                    <div class = "opening">
+                                        <p>
+                                            "Stocks Man" or any associated brand or entity is not promoting or using the displayed company logos, 
+                                            nor do we offer the purchase of these companies. This is used only for the matter of example and 
+                                            information.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class = "details">
+                                    <div class = "summary">
+                                        <p>SITE’S EARNING DISCLAIMER</p>
+                                        <i class = "arrow"></i>
+                                    </div>
+                                    <div class = "opening">
+                                        <p>
+                                            Please note that Mr.Click and its affiliated domains receives advertising fees for 
+                                            directing users to open an account with the financial institutions/advertisers and/or for 
+                                            driving traffic to the advertiser website.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class = "details">
+                                    <div class = "summary">
+                                        <p>SITE RISK DISCLOSURE</p>
+                                        <i class = "arrow"></i>
+                                    </div>
+                                    <div class = "opening">
+                                        <p>
+                                            This web page does not accept any liability for loss or damage as a result of reliance 
+                                            on the information contained within this website; this includes education material, price 
+                                            quotes and charts, and analysis. Please be aware of the risks associated with trading the 
+                                            financial markets; never invest more money than you can risk losing. The risks involved in 
+                                            trading Stocks, Shares, Forex, CFDs and Cryptocurrencies may not be suitable for all 
+                                            investors. We do not retain responsibility for any trading losses you might face as a result 
+                                            of using the data hosted on this site.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "column-spoilers">
+                                <div class = "details">
+                                    <div class = "summary">
+                                        <p>REGULATION & HIGH RISK INVESTMENT WARNING</p>
+                                        <i class = "arrow"></i>
+                                    </div>
+                                    <div class = "opening">
+                                        <p>
+                                            Trading Forex, CFDs and Cryptocurrencies is highly speculative, carries a level of risk and 
+                                            may not be suitable for all investors. You may lose some or all of your invested capital, 
+                                            therefore you should not speculate with capital that you cannot afford to lose. Please click 
+                                            here to read a full risk warning.</br>
+                                        </br>
+                                            This web page is a part of Mr.Click marketing and advertising agency which does not gain or 
+                                            lose profits based on your trading results and operates as a marketing and advertising 
+                                            provider, by referring potential / interested individuals across the globe to regulated 
+                                            financial institutions. In addition, this web page is not a financial services firm and does 
+                                            not operate as a financial services firm and is only used as a marketing tool by third party 
+                                            advertisers and financial institutions to attract customers. </br>
+                                    </br>
+                                            We ask all of our web page visitors to check and decide whether the broker you were connected 
+                                            to applies to all local rules and regulations and is regulated in your country jurisdiction and 
+                                            is allowed to receive customers from the location you are in, before you fund your account with the broker and start trading with it, as It is your obligation to verify the above. 
+                                            Please feel free to contact us or report back (by clicking “Contact Us”) if you find that the 
+                                            broker assigned to you is not regulated in your jurisdiction so we can cancel your account 
+                                            accordingly.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class = "details">
+                                    <div class = "summary">
+                                        <p>LEGAL RESTRICTIONS</p>
+                                        <i class = "arrow"></i>
+                                    </div>
+                                    <div class = "opening">
+                                        <p>
+                                            Without limiting the mentioned provisions, you understand that laws regarding 
+                                            financial contracts vary throughout the world, and it is your responsibility to make 
+                                            sure you properly comply with any law, regulation or guideline in your country of residence 
+                                            regarding the use of the Site. To avoid any doubt, the ability to access our Site does not 
+                                            necessarily mean that our Services and/or your activities through the Site are legal under 
+                                            the laws, regulations or directives relevant to your country of residence.</br>
+                                        </br>
+                                            If you feel you landed on this page by wrong doings of a 3rd party website/promoter please 
+                                            report it by clicking Report Abuse or Contact Us links at the footer.We have placed cookies 
+                                            on your computer to help improve your experience when visiting this website. You can change 
+                                            cookie settings on your computer at any time. Use of this website indicates your acceptance 
+                                            of this website's Privacy Policy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            $('#submit-button').click( function( e ){
+                e.preventDefault();
+                $('#form').addClass('hidden-form2');
+                $('#form2').removeClass('hidden-form2');
+            });
+        </script>
+        <script>
+            $('.summary').click(function() {
+               var spoiler = $(this).next();
+               var arrow = $(this).children(".arrow");
+
+               if(spoiler.is(':visible')){
+                   spoiler.slideUp('normal');
+                   arrow.removeClass("rotated-arrow");
+               }
+               else{
+                   spoiler.slideDown('normal');
+                   arrow.addClass("rotated-arrow");
+               }
+           });
+       </script>
+        <script>
+            $(".cta-button").each( function(){
+                $(this).click( function() { 
+                    $('html, body').animate({
+                        scrollTop: $("#form").offset().top
+                    }, 1000); 
+                });
+            });
+        </script>
+        <script>
+            $(function () {
+                var waitIntgrtn = setInterval(function () {
+                    if (!window.intgrtn) {
+                        return false;
+                    }
+                    clearInterval(waitIntgrtn);
+        
+                    window.intgrtn.events.on("get.project.details.success", function (response) {
+                        console.log('response', response.data.client.location.areaCode);
+                        console.log('response', response.data.client.location.city);
+                        console.log('response', response.data.client.location.country);
+                        console.log('response', response.data.client.location.countryIsoCode);
+                        document.getElementById( "location" ).innerText = response.data.client.location.country + " RESIDENTS";
+                        let countryCode = response.data.client.location.countryIsoCode;
+                        document.getElementById("flag").src = "flags/special/" + countryCode.toLowerCase() + ".png"
+                    });
+                }, 10);
+            });
+        </script>
+    </body>
+</html>
