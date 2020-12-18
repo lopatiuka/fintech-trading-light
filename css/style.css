@@ -737,7 +737,6 @@ input::-webkit-input-placeholder {
     background: #E5E5E5;
     background-image: url("../images/bg\ stl\ light.png");
     background-repeat: no-repeat;
-    background-size: 104%;
     background-position: center 114%;
     z-index: 2;
 }
@@ -1296,7 +1295,7 @@ details[open] summary .round-button {
     color: white;
 }
 
-@media ( min-width: 2601px ) and ( max-width: 3660px ){
+@media ( min-width: 2601px ){
     body {
         overflow-x: hidden;
     }
@@ -1307,6 +1306,10 @@ details[open] summary .round-button {
 
     header .container .main-content .navigation a {
         font-size: 20px;
+    }
+
+    .intro .container {
+        background-position: center bottom;
     }
 
     .intro .container .content .video-container {
@@ -1351,6 +1354,10 @@ details[open] summary .round-button {
         height: 20px;
     }
 
+    .intro .container .content .form-container form .checkboxes .custom-checkbox p {
+        width: 538px;
+    }
+
     .intro .container .content .form-container form .checkboxes label span {
         font-size: 25px;
         line-height: 30px;
@@ -1374,34 +1381,13 @@ details[open] summary .round-button {
         width: 466px;
     }
 
+    .stock-leaders .container .stock-leaders-top {
+        background-size: 104%;
+        background-position: center bottom;
+    }
+
     .about .container .about-items .item {
         width: 587px;
-    }
-
-    .how-works .container .steps .step-item {
-        width: 740px;
-    }
-
-    .how-works .container .steps .step-item .steps-item-description {
-        font-size: 30px;
-    }
-
-    .how-works .container .how-works-bottom {
-        margin-top: 100px;
-    }
-
-    .how-works .container .how-works-bottom .start-now-link {
-        font-size: 25px;        
-    }
-
-    .how-works .container .how-works-bottom img:nth-child(1) {
-        width: 564.42px;
-        height: 519.02px;
-    }
-
-    .how-works .container .how-works-bottom img:nth-child(3) {
-        width: 781.65px;
-        height: 668.73px;
     }
 
     .faq .container .answers details {
@@ -1424,6 +1410,10 @@ details[open] summary .round-button {
         width: 60px;
         height: 60px;
         font-size: 50px;
+    }
+
+    .footer {
+        background-position: center bottom;
     }
 
     .footer .rights {
@@ -1450,6 +1440,10 @@ details[open] summary .round-button {
 
     header .container .main-content .navigation a {
         font-size: 20px;
+    }
+
+    .intro .container {
+        background-position: center 108%;
     }
 
     .intro .container .content .video-container {
@@ -1480,27 +1474,9 @@ details[open] summary .round-button {
         width: 587px;
     }
 
-    .how-works .container .steps .step-item {
-        width: 640px;
-    }
-
-    .how-works .container .how-works-bottom {
-        margin-top: 100px;
-    }
-
-    .how-works .container .how-works-bottom .start-now-link {
-        font-size: 25px;
-    }
-
-    .how-works .container .how-works-bottom img:nth-child(1) {
-        width: 564.42px;
-        height: 519.02px;
-    }
-
-    .how-works .container .how-works-bottom img:nth-child(3) {
-        width: 781.65px;
-        height: 668.73px;
-        z-index: -1;
+    .stock-leaders .container .stock-leaders-top {
+        background-position: center 149%;
+        background-size: 104%;
     }
 
     .faq .container .answers details {
